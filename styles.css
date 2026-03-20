@@ -339,6 +339,7 @@ p.subtitle {
 input[type="range"] {
     width: 100%;
     -webkit-appearance: none;
+    appearance: none;
     height: 8px;
     background: rgba(255,255,255,0.1);
     border-radius: 4px;
@@ -347,6 +348,7 @@ input[type="range"] {
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
+    appearance: none;
     width: 24px;
     height: 24px;
     border-radius: 50%;

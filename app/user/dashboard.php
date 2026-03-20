@@ -37,7 +37,13 @@ include __DIR__ . '/../includes/header.php';
 </div>
 
 <div class="stat-grid">
-  <div class="stat-card"><div class="label">Wallet Balance</div><div class="value cyan">$<?= number_format($walletBal,2) ?></div></div>
+  <div class="stat-card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem">
+      <div class="label" style="margin-bottom:0">Wallet Balance</div>
+      <a href="/app/user/deposit.php" style="color:var(--primary);text-decoration:none;font-size:.75rem;font-weight:700;background:rgba(0,229,255,.1);padding:2px 8px;border-radius:4px"><i class="fas fa-plus"></i> Add Funds</a>
+    </div>
+    <div class="value cyan">$<?= number_format($walletBal,2) ?></div>
+  </div>
   <div class="stat-card"><div class="label">Total Invested</div><div class="value">$<?= number_format($invTotal,2) ?></div></div>
   <div class="stat-card"><div class="label">Total Earned</div><div class="value green">$<?= number_format($totalEarned,2) ?></div></div>
   <div class="stat-card"><div class="label">Downline Volume</div><div class="value gold">$<?= number_format($downline,2) ?></div></div>

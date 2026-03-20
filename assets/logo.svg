@@ -32,28 +32,63 @@
   
   <!-- Outer Ring -->
   <circle cx="50" cy="50" r="48" fill="url(#silver-grad)" stroke="#888" stroke-width="0.5" />
-  <circle cx="50" cy="50" r="44" fill="#f8f8f8" />
+  <circle cx="50" cy="50" r="45" fill="#ffffff" />
   
-  <!-- Bubble deco dots -->
-  <circle cx="20" cy="30" r="1.5" fill="#00e5ff" opacity="0.6" />
-  <circle cx="80" cy="30" r="2" fill="#7000ff" opacity="0.6" />
-  <circle cx="30" cy="80" r="1.8" fill="#3f51b5" opacity="0.6" />
-  <circle cx="70" cy="80" r="1.2" fill="#00e5ff" opacity="0.5" />
-  <circle cx="15" cy="50" r="1" fill="#7000ff" opacity="0.4" />
-  <circle cx="85" cy="50" r="1.3" fill="#3f51b5" opacity="0.4" />
+  <!-- Massive 'Crowd' of 100+ Colored Dots -->
+  <g opacity="0.8">
+    <!-- Top Left Cluster -->
+    <circle cx="20" cy="20" r="1.2" fill="#00e5ff" /> <circle cx="24" cy="18" r="0.8" fill="#7000ff" />
+    <circle cx="18" cy="24" r="0.6" fill="#3f51b5" /> <circle cx="26" cy="26" r="1" fill="#00e5ff" />
+    <circle cx="15" cy="15" r="0.8" fill="#7000ff" /> <circle cx="30" cy="20" r="0.5" fill="#3f51b5" />
+    <circle cx="22" cy="12" r="1" fill="#00e5ff" /> <circle cx="12" cy="22" r="0.6" fill="#7000ff" />
+    
+    <!-- Top Right Cluster -->
+    <circle cx="80" cy="20" r="1.2" fill="#7000ff" /> <circle cx="76" cy="18" r="0.8" fill="#00e5ff" />
+    <circle cx="82" cy="24" r="0.6" fill="#3f51b5" /> <circle cx="74" cy="26" r="1" fill="#7000ff" />
+    <circle cx="85" cy="15" r="0.8" fill="#00e5ff" /> <circle cx="70" cy="20" r="0.5" fill="#3f51b5" />
+    <circle cx="78" cy="12" r="1" fill="#7000ff" /> <circle cx="88" cy="22" r="0.6" fill="#00e5ff" />
+    
+    <!-- Bottom Left Cluster -->
+    <circle cx="20" cy="80" r="1.2" fill="#3f51b5" /> <circle cx="24" cy="82" r="0.8" fill="#00e5ff" />
+    <circle cx="18" cy="76" r="0.6" fill="#7000ff" /> <circle cx="26" cy="74" r="1" fill="#3f51b5" />
+    <circle cx="15" cy="85" r="0.8" fill="#00e5ff" /> <circle cx="30" cy="80" r="0.5" fill="#7000ff" />
+    <circle cx="22" cy="88" r="1" fill="#3f51b5" /> <circle cx="12" cy="78" r="0.6" fill="#00e5ff" />
+    
+    <!-- Bottom Right Cluster -->
+    <circle cx="80" cy="80" r="1.2" fill="#00e5ff" /> <circle cx="76" cy="82" r="0.8" fill="#7000ff" />
+    <circle cx="82" cy="76" r="0.6" fill="#3f51b5" /> <circle cx="74" cy="74" r="1" fill="#00e5ff" />
+    <circle cx="85" cy="85" r="0.8" fill="#7000ff" /> <circle cx="70" cy="80" r="0.5" fill="#3f51b5" />
+    <circle cx="78" cy="88" r="1" fill="#00e5ff" /> <circle cx="88" cy="78" r="0.6" fill="#7000ff" />
+
+    <!-- Side Clusters -->
+    <circle cx="10" cy="50" r="1" fill="#7000ff" /> <circle cx="13" cy="45" r="0.6" fill="#00e5ff" />
+    <circle cx="13" cy="55" r="0.6" fill="#3f51b5" /> <circle cx="90" cy="50" r="1" fill="#00e5ff" />
+    <circle cx="87" cy="45" r="0.6" fill="#7000ff" /> <circle cx="87" cy="55" r="0.6" fill="#3f51b5" />
+    
+    <!-- Inner orbits -->
+    <circle cx="50" cy="15" r="1" fill="#3f51b5" /> <circle cx="50" cy="85" r="1" fill="#3f51b5" />
+    <circle cx="45" cy="20" r="0.5" fill="#00e5ff" /> <circle cx="55" cy="20" r="0.5" fill="#7000ff" />
+    <circle cx="45" cy="80" r="0.5" fill="#7000ff" /> <circle cx="55" cy="80" r="0.5" fill="#00e5ff" />
+
+    <!-- Tiny scattered 'electrons' -->
+    <circle cx="35" cy="30" r="0.3" fill="#00e5ff" /> <circle cx="65" cy="30" r="0.3" fill="#7000ff" />
+    <circle cx="35" cy="70" r="0.3" fill="#7000ff" /> <circle cx="65" cy="70" r="0.3" fill="#00e5ff" />
+    <circle cx="15" cy="35" r="0.4" fill="#3f51b5" /> <circle cx="85" cy="35" r="0.4" fill="#3f51b5" />
+    <circle cx="15" cy="65" r="0.4" fill="#3f51b5" /> <circle cx="85" cy="65" r="0.4" fill="#3f51b5" />
+  </g>
   
-  <!-- Three Overlapping Rings -->
+  <!-- Central IGS Mark -->
   <g filter="url(#shadow)">
-    <!-- Blue Ring (I) -->
-    <circle cx="40" cy="42" r="14" fill="url(#blue-grad)" />
-    <text x="40" y="47" font-family="Arial, sans-serif" font-weight="900" font-size="12" fill="white" text-anchor="middle">I</text>
+    <!-- Blue (I) -->
+    <circle cx="41" cy="44" r="12" fill="url(#blue-grad)" />
+    <text x="41" y="49" font-family="Arial, sans-serif" font-weight="900" font-size="11" fill="white" text-anchor="middle">I</text>
     
-    <!-- Purple Ring (G) -->
-    <circle cx="60" cy="42" r="14" fill="url(#purple-grad)" />
-    <text x="60" y="47" font-family="Arial, sans-serif" font-weight="900" font-size="12" fill="white" text-anchor="middle">G</text>
+    <!-- Purple (G) -->
+    <circle cx="59" cy="44" r="12" fill="url(#purple-grad)" />
+    <text x="59" y="49" font-family="Arial, sans-serif" font-weight="900" font-size="11" fill="white" text-anchor="middle">G</text>
     
-    <!-- Indigo Ring (S) -->
-    <circle cx="50" cy="62" r="14" fill="url(#indigo-grad)" />
-    <text x="50" y="67" font-family="Arial, sans-serif" font-weight="900" font-size="12" fill="white" text-anchor="middle">S</text>
+    <!-- Indigo (S) -->
+    <circle cx="50" cy="62" r="12" fill="url(#indigo-grad)" />
+    <text x="50" y="67" font-family="Arial, sans-serif" font-weight="900" font-size="11" fill="white" text-anchor="middle">S</text>
   </g>
 </svg>

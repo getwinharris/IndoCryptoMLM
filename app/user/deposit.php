@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = "Minimum deposit is $10.";
     } else {
         // Stripe checkout logic
-        $stripeKey = setting('stripe_secret_key');
+        $stripeKey = setting('stripe_secret');
         if (!$stripeKey) {
             $error = "Stripe is not currently configured by the admin.";
         } else {
