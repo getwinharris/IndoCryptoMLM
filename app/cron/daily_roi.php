@@ -1,8 +1,8 @@
 <?php
 /**
  * Daily ROI Cron Job
- * Run: php /var/www/indoglobalservices.in/html/app/cron/daily_roi.php
- * Schedule: 0 0 * * * /usr/bin/php /var/www/indoglobalservices.in/html/app/cron/daily_roi.php >> /var/log/igs_cron.log 2>&1
+ * Run: php /root/Dev/app/cron/daily_roi.php
+ * Schedule: 0 0 * * * /usr/bin/php /root/Dev/app/cron/daily_roi.php >> /var/log/igs_cron.log 2>&1
  */
 define('RUNNING_CLI', php_sapi_name() === 'cli');
 if (!RUNNING_CLI) { http_response_code(403); die('CLI only'); }

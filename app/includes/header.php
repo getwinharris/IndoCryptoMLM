@@ -86,7 +86,7 @@ th{color:var(--muted);font-weight:600;font-size:.8rem;text-transform:uppercase;l
 </head>
 <body>
 <aside class="sidebar">
-  <div class="logo"><img src="/assets/logo.jpg" alt="IGS" style="height:35px; border-radius:50%; vertical-align:middle; margin-right:8px;"> Indo <span>Global</span></div>
+  <div class="logo"><img src="/assets/logo.svg" alt="IGS" style="height:35px; border-radius:50%; vertical-align:middle; margin-right:8px;"> Indo <span>Global</span></div>
   <nav>
     <?php if (isAdmin()): ?>
     <a href="/app/admin/dashboard.php" <?= str_contains($_SERVER['REQUEST_URI'],'admin/dashboard') ? 'class="active"':'' ?>><i class="fas fa-tachometer-alt"></i> Dashboard</a>
