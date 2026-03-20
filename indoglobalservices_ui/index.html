@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indo Global Services | Global Export Investments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="logo">Indo <span>Global</span> Services</div>
+        <div class="nav-links">
+            <a href="#about" class="active">Vision</a>
+            <a href="#calculator">Returns Calculator</a>
+            <a href="#tiers">Achievement Tiers</a>
+            <button class="btn-primary" onclick="alert('Full Platform Launching Soon! Stay Tuned.')">Join the Waitlist</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <div class="badge">🚀 Launching Soon</div>
+                <h1>Empower Global Export.<br> <span class="highlight">Earn 0.5% Daily.</span></h1>
+                <p>Invest in the future of Asia-to-Global trade. We connect raw resources like coconut and bulk commodities to international markets, returning real, fiat-backed profits to our investors for 400 days.</p>
+                <div class="cta-buttons">
+                    <a href="#calculator" class="btn-primary pulse">Calculate Your Returns</a>
+                    <a href="#tiers" class="btn-secondary">Explore MLM Tiers</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="glass-card main-stat">
+                    <h3>Peak Return Cap</h3>
+                    <div class="number text-gradient">500%</div>
+                    <div class="label">Up to 5x with Diamond Tier</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-section" id="calculator">
+            <h2>Investment & Earnings <span class="highlight">Calculator</span></h2>
+            <p class="subtitle">See exactly how your wealth grows over 400 days with our fiat-backed export fund.</p>
+
+            <div class="calculator-container glass-card">
+                <div class="calc-inputs">
+                    <div class="input-group">
+                        <label for="investment">Your Investment: <span id="inv-display" class="highlight">$1,000</span></label>
+                        <input type="range" id="investment" min="50" max="50000" step="50" value="1000">
+                        <div class="range-labels">
+                            <span>$50</span>
+                            <span>$50,000</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tier-select">Your Achievement Tier:</label>
+                        <select id="tier-select">
+                            <option value="2">Bronze (Default - 2x Cap)</option>
+                            <option value="3">Silver (3x Cap)</option>
+                            <option value="4">Gold (4x Cap)</option>
+                            <option value="5">Diamond (5x Cap)</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-info">
+                        <div class="info-row">
+                            <span>Daily ROI Rate</span>
+                            <span class="highlight">0.5%</span>
+                        </div>
+                        <div class="info-row">
+                            <span>Duration</span>
+                            <span>400 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calc-results">
+                    <div class="result-box">
+                        <div class="result-label">Daily Passive Income</div>
+                        <div class="result-value" id="res-daily">$5.00</div>
+                    </div>
+                    <div class="result-box highlighted-box">
+                        <div class="result-label">Total Potential Return (Capped)</div>
+                        <div class="result-value text-gradient" id="res-total">$2,000.00</div>
+                    </div>
+                    <div class="result-box">
+                        <div class="result-label">Return from Investment Alone</div>
+                        <div class="result-value" id="res-base">$2,000.00</div>
+                    </div>
+                    <div class="result-box">
+                        <div class="result-label">Available Headroom for Referral Commissions</div>
+                        <div class="result-value" id="res-commission">$0.00</div>
+                        <div class="tiny-text">(Difference between your Base ROI and your Tier Cap)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tiers-section" id="tiers">
+            <h2>The <span class="highlight">10-Level</span> Multiplier</h2>
+            <p class="subtitle">Directly refer others and earn from their daily ROI across 10 levels deep.</p>
+
+            <div class="tier-grid">
+                <div class="tier-card glass-card">
+                    <div class="tier-icon bronze">🥉</div>
+                    <h3>Bronze</h3>
+                    <p class="requirement">Any Initial Investment ($50+)</p>
+                    <div class="cap"><strong>2x</strong> Max Earnings Cap</div>
+                </div>
+                <div class="tier-card glass-card">
+                    <div class="tier-icon silver">🥈</div>
+                    <h3>Silver</h3>
+                    <p class="requirement">$500 Downline OR 5 Directs</p>
+                    <div class="cap"><strong>3x</strong> Max Earnings Cap</div>
+                </div>
+                <div class="tier-card glass-card">
+                    <div class="tier-icon gold">🥇</div>
+                    <h3>Gold</h3>
+                    <p class="requirement">$5,000 Downline</p>
+                    <div class="cap"><strong>4x</strong> Max Earnings Cap</div>
+                </div>
+                <div class="tier-card glass-card premium">
+                    <div class="tier-icon diamond">💎</div>
+                    <h3>Diamond</h3>
+                    <p class="requirement">$10,000 Downline</p>
+                    <div class="cap"><strong class="highlight">5x</strong> Max Earnings Cap</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Indo <span>Global</span> Services</div>
+            <p>&copy; 2026 Indo Global Services. All rights reserved.</p>
+            <p class="disclaimer">Secure Fiat Deposits via Stripe. Protected with Email OTP and SSL.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
