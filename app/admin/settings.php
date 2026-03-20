@@ -105,22 +105,7 @@ include __DIR__ . '/../includes/header.php';
             </div>
         </div>
 
-        <!-- MLM Structure (Levels 1-10) -->
-        <div class="card">
-            <h3 style="margin-bottom:1.5rem; color:var(--accent)"><i class="fas fa-sitemap"></i> MLM Commission Structure</h3>
-            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 0.8rem;">
-                <?php foreach ($mlmLevels as $level): ?>
-                <div style="background:rgba(255,255,255,0.03); padding:0.8rem; border-radius:8px; border:1px solid var(--border); display:flex; align-items:center; justify-content:space-between;">
-                    <span style="font-weight:600; font-size:0.9rem">Level <?= $level['level'] ?></span>
-                    <div style="display:flex; align-items:center; gap:5px">
-                        <input type="number" name="mlm_level_<?= $level['level'] ?>" step="0.1" value="<?= $level['commission_percent'] ?>" style="width:60px; padding:0.3rem; background:transparent; border:none; border-bottom:1px solid var(--primary); color:white; text-align:right">
-                        <span style="font-size:0.8rem; color:var(--muted)">%</span>
-                    </div>
-                </div>
-                <?php endforeach; ?>
-            </div>
-            <p style="font-size:0.75rem; color:var(--muted); margin-top:1rem">Note: Commissions are calculated as a percentage of the downline's daily ROI.</p>
-        </div>
+
 
         <!-- Tiers & Earning Caps -->
         <div class="card">
@@ -161,6 +146,9 @@ include __DIR__ . '/../includes/header.php';
             <div class="form-group">
                 <label>Stripe Secret Key</label>
                 <input type="password" name="stripe_secret" value="<?= htmlspecialchars($allSettings['stripe_secret']) ?>" style="font-family:monospace; font-size:0.85rem">
+                <p style="font-size:0.75rem; color:var(--muted); margin-top:0.4rem">
+                    <i class="fas fa-info-circle"></i> Get keys from <a href="https://dashboard.stripe.com/apikeys" target="_blank" style="color:var(--primary)">Stripe Dashboard</a>. Ensure "Secret key" is used.
+                </p>
             </div>
             <div class="form-group">
                 <label>Google Client ID</label>
@@ -169,6 +157,10 @@ include __DIR__ . '/../includes/header.php';
             <div class="form-group">
                 <label>Google Client Secret</label>
                 <input type="password" name="google_client_secret" value="<?= htmlspecialchars($allSettings['google_client_secret']) ?>" style="font-family:monospace; font-size:0.85rem">
+                <p style="font-size:0.75rem; color:var(--muted); margin-top:0.4rem">
+                    <i class="fas fa-info-circle"></i> Create at <a href="https://console.cloud.google.com/apis/credentials" target="_blank" style="color:var(--primary)">Google Console</a>. <br>
+                    Redirect URI: <code style="color:var(--warning)">https://indoglobalservices.in/app/auth/google_callback.php</code>
+                </p>
             </div>
         </div>
 
@@ -176,7 +168,7 @@ include __DIR__ . '/../includes/header.php';
 
     <div style="position: sticky; bottom: 1.5rem; margin-top: 2rem; display: flex; justify-content: flex-end;">
         <button type="submit" class="btn btn-primary btn-lg" style="box-shadow: 0 10px 20px rgba(0,229,255,0.3); padding: 1rem 3rem; font-size: 1.1rem">
-            <i class="fas fa-save"></i> Commit Global Settings
+            <i class="fas fa-save"></i> Save Settings
         </button>
     </div>
 </form>
