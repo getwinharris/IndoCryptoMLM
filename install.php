@@ -46,7 +46,7 @@ footer a{color:var(--muted);text-decoration:none;font-size:.85rem;transition:col
 <body>
 <div class="glow1"></div><div class="glow2"></div>
 <header>
-  <a class="logo" href="/"><img src="/assets/logo.jpg" alt="IGS"> <span>Indo</span> Global Services</a>
+  <a class="logo" href="/"><img src="/assets/logo.svg" alt="IGS"> <span>Indo</span> Global Services</a>
   <div class="nav-links">
     <a href="/">Home</a>
     <a href="/app/auth/login.php">Sign In</a>

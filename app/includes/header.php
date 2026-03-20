@@ -90,6 +90,7 @@ th{color:var(--muted);font-weight:600;font-size:.8rem;text-transform:uppercase;l
   <nav>
     <?php if (isAdmin()): ?>
     <a href="/app/admin/dashboard.php" <?= str_contains($_SERVER['REQUEST_URI'],'admin/dashboard') ? 'class="active"':'' ?>><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="/app/admin/mlm_tree.php" <?= str_contains($_SERVER['REQUEST_URI'],'admin/mlm_tree') ? 'class="active"':'' ?>><i class="fas fa-sitemap"></i> Genealogy Tree</a>
     <a href="/app/admin/users.php" <?= str_contains($_SERVER['REQUEST_URI'],'admin/users') ? 'class="active"':'' ?>><i class="fas fa-users"></i> Users</a>
     <a href="/app/admin/kyc.php" <?= str_contains($_SERVER['REQUEST_URI'],'admin/kyc') ? 'class="active"':'' ?>><i class="fas fa-id-card"></i> KYC Approvals</a>
     <a href="/app/admin/investments.php" <?= str_contains($_SERVER['REQUEST_URI'],'admin/investments') ? 'class="active"':'' ?>><i class="fas fa-chart-line"></i> Investments</a>

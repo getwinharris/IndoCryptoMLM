@@ -26,7 +26,10 @@ $mlm = db()->query("SELECT * FROM mlm_levels ORDER BY level ASC")->fetchAll();
 $pageTitle = 'MLM Architecture';
 include __DIR__ . '/../includes/header.php';
 ?>
-<div class="topbar"><h1>MLM & Achievement Tiers</h1></div>
+<div class="topbar">
+    <h1><i class="fas fa-sitemap"></i> MLM & Achievement Tiers</h1>
+    <a href="mlm_tree.php" class="btn btn-primary"><i class="fas fa-network-wired"></i> View Genealogy Tree</a>
+</div>
 
 <?php if ($error): ?><div class="alert alert-danger"><?= htmlspecialchars($error) ?></div><?php endif; ?>
 <?php if ($success): ?><div class="alert alert-success"><?= htmlspecialchars($success) ?></div><?php endif; ?>

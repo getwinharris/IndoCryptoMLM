@@ -77,7 +77,7 @@ input:focus{border-color:var(--primary)}
 </head>
 <body>
 <div class="box">
-  <div class="logo">Indo <span>Global</span></div>
+  <div class="logo"><img src="/assets/logo.svg" alt="IGS" style="height:60px;margin-bottom:1rem;display:block;margin-left:auto;margin-right:auto"> Indo <span>Global</span></div>
   <h2>Verify Your Email</h2>
   <p class="sub">We sent a 6-digit code to <b><?= htmlspecialchars($email) ?></b>. Check your spam folder if it doesn't arrive.</p>
   
